@@ -8,7 +8,7 @@ export function Home() {
 	useEffect(() => {
 		console.log("count: ", count);
 		console.log("inputValue: ", inputValue);
-	});
+	});  // si al final van [count] o [inputValue] solo eso considera, el otro lo omite
 
 	const handleClick = () => {
 		setCount(count + 1);
