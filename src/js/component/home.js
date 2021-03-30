@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 //create your first component
 export function Home() {
 	const [count, setCount] = useState(0);
 	const [inputValue, setInputValue] = useState("Fernando");
+
+	useEffect(() => {
+		console.log("count: ", count);
+		console.log("inputValue: ", inputValue);
+	});
 
 	const handleClick = () => {
 		setCount(count + 1);
